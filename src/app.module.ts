@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UsuarioModule } from './system/usuario/usuario.module';
 import { UsuariodddModule } from './system/usuarioddd/usuarioddd.module';
 
 @Module({
@@ -15,7 +14,6 @@ import { UsuariodddModule } from './system/usuarioddd/usuarioddd.module';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    UsuarioModule,
     UsuariodddModule,
   ],
 })
